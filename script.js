@@ -17,7 +17,7 @@ async function consultarRegistros() {
         } else {
             data.forEach(registro => {
                 const li = document.createElement('li');
-                li.innerText = `${registro.documento}: ${registro.tipo_doc}: ${registro.categoria}: ${registro.mnt_trx_mm}: ${registro.num_trx}: ${registro.pct_mnt_tot}: ${registro.pct_num_trx_tot}`;
+                li.innerText = `Documento:${registro.documento}\n Tipo de documento:${registro.tipo_doc}\n Categoria:${registro.categoria}\n Monto transaccion:${registro.mnt_trx_mm}\n Numero transaccion:${registro.num_trx}\n Porcentaje del monto:${registro.pct_mnt_tot}\n Porcentaje numero trx:${registro.pct_num_trx_tot}`;
                 registroList.appendChild(li);
             });
         }
